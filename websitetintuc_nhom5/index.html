@@ -1,0 +1,863 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tin tức 24h, Đọc báo online tin mới nhất</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<style>
+	#snowflakeContainer{position:absolute;left:0px;top:0px;}
+	.snowflake{padding-left:15px;font-size:14px;line-height:24px;position:fixed;color:#ebebeb;user-select:none;z-index:1000;-moz-user-select:none;-ms-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;}
+	.snowflake:hover {cursor:default}
+</style>
+<link href="css/menu.css" rel="stylesheet" type="text/css">
+<div id='snowflakeContainer'>
+<p class='snowflake'>❄</p>
+</div>
+<script style='text/javascript'>
+	//<![CDATA[
+	var requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var transforms=["transform","msTransform","webkitTransform","mozTransform","oTransform"];var transformProperty=getSupportedPropertyName(transforms);var snowflakes=[];var browserWidth;var browserHeight;var numberOfSnowflakes=50;var resetPosition=false;function setup(){window.addEventListener("DOMContentLoaded",generateSnowflakes,false);window.addEventListener("resize",setResetFlag,false)}setup();function getSupportedPropertyName(b){for(var a=0;a<b.length;a++){if(typeof document.body.style[b[a]]!="undefined"){return b[a]}}return null}function Snowflake(b,a,d,e,c){this.element=b;this.radius=a;this.speed=d;this.xPos=e;this.yPos=c;this.counter=0;this.sign=Math.random()<0.5?1:-1;this.element.style.opacity=0.5+Math.random();this.element.style.fontSize=4+Math.random()*30+"px"}Snowflake.prototype.update=function(){this.counter+=this.speed/5000;this.xPos+=this.sign*this.speed*Math.cos(this.counter)/40;this.yPos+=Math.sin(this.counter)/40+this.speed/30;setTranslate3DTransform(this.element,Math.round(this.xPos),Math.round(this.yPos));if(this.yPos>browserHeight){this.yPos=-50}};function setTranslate3DTransform(a,c,b){var d="translate3d("+c+"px, "+b+"px, 0)";a.style[transformProperty]=d}function generateSnowflakes(){var b=document.querySelector(".snowflake");var h=b.parentNode;browserWidth=document.documentElement.clientWidth;browserHeight=document.documentElement.clientHeight;for(var d=0;d<numberOfSnowflakes;d++){var j=b.cloneNode(true);h.appendChild(j);var e=getPosition(50,browserWidth);var a=getPosition(50,browserHeight);var c=5+Math.random()*40;var g=4+Math.random()*10;var f=new Snowflake(j,g,c,e,a);snowflakes.push(f)}h.removeChild(b);moveSnowflakes()}function moveSnowflakes(){for(var b=0;b<snowflakes.length;b++){var a=snowflakes[b];a.update()}if(resetPosition){browserWidth=document.documentElement.clientWidth;browserHeight=document.documentElement.clientHeight;for(var b=0;b<snowflakes.length;b++){var a=snowflakes[b];a.xPos=getPosition(50,browserWidth);a.yPos=getPosition(50,browserHeight)}resetPosition=false}requestAnimationFrame(moveSnowflakes)}function getPosition(b,a){return Math.round(-1*b+Math.random()*(a+2*b))}function setResetFlag(a){resetPosition=true};
+	//]]>
+</script>
+</head>
+
+<body>
+  
+	<div class="warrp"><!--Phần bao quanh-->
+    	<div><!--menu--><!--phần menu-->
+          <div class="topnav">
+            
+            <a class="active" href="#home">Bài Viết</a>
+            <a class="active" href="#home">Hỏi Đáp</a>
+            <a class="active" href="#home">Thảo Luận</a>
+            <img src="Anh/Skins/370076808_312456114901893_5088459227299089615_n.png" width="80" height="50">
+            <div class="search-container">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Tìm kiếm.." name="search">
+                <button type="submit">Submit</button>
+              </form>
+              
+            </div>
+          </div>
+
+
+
+            <div id="container" width="100%" >
+            <ul id="menu" >
+            	<li><a href="#">HOME</a></li>
+              <li><a href="#">GIẢI TRÍ</a>
+                    <ul>
+                        <li><a href="#">Sao</a></li>
+                        <li><a href="#">Show Truyền Hình</a></li>
+                        <li><a href="#">Điện Ảnh</a></li>
+                        <li><a href="#">Âm Nhạc</a></li>
+                    </ul>
+</li>
+                <li><a href="#">ĐỜI SỐNG</a>
+                    <ul>
+                        <li><a href="#">Nhịp Sống</a></li>
+                        <li><a href="#">Tổ Ấm</a></li>
+                        <li><a href="#">Bài Học Cuộc Sống</a></li>
+                        <li><a href="#">Cooking</a></li>
+                        <li><a href="#">Tiêu Dùng</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="#">XÃ HỘI</a>
+                    <ul>
+                        <li><a href="#">Thời Sự</a></li>
+                        <li><a href="#">Pháp Luật</a></li>
+                        <li><a href="#">Mạng Xã Hội</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">LÀM ĐẸP</a>
+                    <ul>
+                        <li><a href="#">Thời Trang</a></li>
+                        <li><a href="#">Lối Sống</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">SỨC KHỎE</a>
+                  <ul>
+                    <li><a href="#">Tin Tức</a></li>
+                    <li><a href="#">Tư Vấn</a></li>
+                    <li><a href="#">Dinh Dưỡng</a></li>
+                    <li><a href="#">Khỏe Đẹp</a></li>
+                    <li><a href="#">Đàn Ông</a></li>
+                    <li><a href="#">Các Bệnh</a></li>
+                    <li><a href="#">Vaccine</a></li>
+                    
+                </ul>
+                
+                </li>
+                  <li><a href="#">THẾ GIỚI</a>
+                    <ul>
+                      <li><a href="#">Tư Liệu</a></li>
+                      <li><a href="#">Phân Tích</a></li>
+                      <li><a href="#">Người Việt 5 Châu</a></li>
+                      <li><a href="#">Cuộc Sống Đó Đây</a></li>
+                      <li><a href="#">Quân Sự</a></li>
+                  </ul>
+                  </li>
+                  <li><a href="#">THỂ THAO</a>
+                    <ul>
+                    <li><a href="#">Bóng Đá</a></li>
+                    <li><a href="#">Lịch Thi Đấu</a></li>
+                    <li><a href="#">Trắc Nghiệm</a></li>
+                    <li><a href="#">BunDesLiGa</a></li>
+                    <li><a href="#">Tennis</a></li>
+                    <li><a href="#">Marathon</a></li>
+                    <li><a href="#">Các Môn Khác</a></li>
+                    <li><a href="#">Hậu Trường Video</a></li>
+                    <li><a href="#">Ảnh</a></li>
+                    <li><a href="#">Tường Thuật</a></li>
+                   
+                </ul>
+                  
+                  </li>
+                    <li><a href="#">GIÁO DỤC</a>
+                      <ul>
+                        <li><a href="#">Tin Tức</a></li>
+                        <li><a href="#">Chuyển Sinh</a></li>
+                        <li><a href="#">Chân Dung</a></li>
+                        <li><a href="#">Du Học</a></li>
+                        <li><a href="#">Diễn Đàn</a></li>
+                        <li><a href="#">Học Tiếng Anh</a></li>
+                        <li><a href="#">Giáo Dục 4.0</a></li>
+                    </ul>
+                    
+                    
+                    </li>
+                     <li><a href="#">TÂM SỰ</a>
+                      <ul>
+                      <li><a href="#">Hẹn Hò</a></li>
+</ul>
+                    </li>
+
+                      <li><a href="#">KHOA HỌC</a>
+                      <ul>
+                        <li><a href="#">Khoa Học Trong Nước</a></li>
+                            <li><a href="#">Tin Tức</a></li>
+                            <li><a href="#">Phát Minh</a></li>
+                            <li><a href="#">Ứng Dụng</a></li>
+                            <li><a href="#">Thế Giới Tự Nhiên</a></li>
+                            <li><a href="#">Thưởng Thức</a></li>
+                       </ul>
+         </li>
+                      <li><a href="#">Podcast</a>
+                        <ul>
+                        <li><a href="#">Tin Tức Hôm Nay</a></li>
+                        <li><a href="#">Tiền Làm Gì?</a></li>
+                        <li><a href="#">Tài Chính Cá Nhân</a></li>
+                        <li><a href="#">Giải Mã</a></li>
+                        <li><a href="#">Hộp Đen</a></li>
+                        <li><a href="#">Họ Nói Gì?</a></li>
+                        <li><a href="#">Ly Hôn</a></li>
+                          
+                                <li><a href="#">Thầm Thì</a></li>
+                                <li><a href="#">Bạn Ổn Không?</a></li>
+                                <li><a href="#">Ứng Dụng</a></li>
+                                <li><a href="#">Tôi Trong Gương</a></li>
+                                <li><a href="#">Chuyện Đi Làm</a></li>
+                                <li><a href="#">Úp Mở 18+</a></li>
+                                <li><a href="#">Điểm Tin</a></li>
+                                <li><a href="#">Nguy Cơ</a></li>
+                      </ul>
+                      </li>
+
+                        <li><a href="#">VIDEO</a>
+                          <ul>
+                            <li><a href="#">Thời Sự</a></li>
+                                <li><a href="#">Nhịp Sống</a></li>
+                                <li><a href="#">Food</a></li>
+                                <li><a href="#">Tôi Kể</a></li>
+                                <li><a href="#">Chuyện Núi Rừng</a></li>
+                                <li><a href="#">Pháp Luật</a></li>
+                                <li><a href="#">Giải Trí</a></li>
+                                <li><a href="#">Thể Thao</a></li>
+                                <li><a href="#">Số Hóa</a></li>
+                                <li><a href="#">Xe</a></li>
+                                <li><a href="#">Sức Khỏe</a></li>
+                                <li><a href="#">Du Lịch</a></li>
+                                <li><a href="#">Thế Giới</a></li>
+                                <li><a href="#">Khoa Học</a></li>
+                                <li><a href="#">Giáo Dục</a></li>
+                                <li><a href="#">Tọa Đàm Kinh Tế<a></li>
+                                <li><a href="#">Chủ Đề</a></li>
+                              </ul>
+                           
+                        
+                        
+                        
+                        </li>
+                          <li><a href="#">GIA ĐÌNH</a>
+
+                    <ul>
+                    <li><a href="#">Tâm Sự</a></li>
+                        <li><a href="#">Nhà Đẹp</a></li>
+                        <li><a href="#">Mẹo Vặt</a></li>
+                        <li><a href="#">Yêu</a></li>
+                        <li><a href="#">Vào Bếp</a></li>
+                        <li><a href="#">Làm Mẹ</a></li>
+                   </ul>
+                   </li>
+            </div>
+            </div>
+    	<div id="header"><!--phần đầu trang wed-->
+        </div> 
+        <div class="main"><!--phần thân trang wed-->
+        <br><h2 style="text-align: left; color:#f00">ϟ SỰ KIỆN NÓNG</h2>
+     <br><table width="100%" border="0" cellspacing="5px" cellpadding="5px">
+  <tr style="text-align:center">
+    <td><img src="Anh/sao-viet (4).jpg" width="70%" height="443"><img src="Untitled-1.jpg" width="30%" height="443"></td>
+    <td>
+    </td>
+    <td>
+    <br>
+    <br>
+  <br>
+   <br>
+    <br>
+    <p style="color:#f00"></p></td>
+  </tr>
+</table>
+
+<div id="slideshow">
+<div class="slide-wrapper">
+                    <div class="slide"><img src="Anh/tien-tri-Copy1.jpg" width="230" height="180">
+                     <img src="Anh/sao-viet (5).jpg" width="230" height="180">
+                      <img src="Anh/6.jpg" width=230" height="180"></div>
+ 
+                    <div class="slide">ㅤ<img src="Anh/tien-tri-Copy1.jpg" width="220" height="180"> 
+                     <img src="Anh/sao-viet (5).jpg" width="220" height="180">
+                      <img src="Anh/6.jpg" width=180" height="180">
+                      </div>
+ </div>            
+</div>  
+
+
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(0"></span> 
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                </div>
+                
+ <table>
+  <br><hr style="text-align: center; color="grey" />
+  <hr style="text-align: center; color="grey" />
+  
+          <div class="left"><!--phần bên trái-->
+            
+                <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><br><img src="Anh/kiot-ava.jpg" width="200" height="150"></td>
+            <td><h3><br><br>Phụ nữ tiểu vào sáng nếu thấy có 6 dấu hiệu thì cần đi khám tử cung, ung thư ngay<img src="Anh/Skins/new.gif" width="33" height="15"></a></h3><br>
+             <p style="color:#06F">SỨC KHỎE<a style="color:#666">ㅤ2 giờ trước</a></p><br>
+             <p>Vào buổi sáng khi đi tiểu lần đầu tiên trong ngày, bạn hãy quan sát xem cơ thể có những bất thường sau đây hay không. Nếu có, bạn phải kịp thời đi khám để tìm ra nguyên...</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon.html">Chi tiết</a></p>
+            </td>
+          </tr>
+        </table>
+        
+           <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><img src="Anh/giao-duc.jpg" width="200" height="150"></td>
+            <td><h3>Nữ giảng viên Hà Nội xinh đẹp nhất hà nội , gây 'sốt' giảng đường mấy ngày qua.... <img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+              <p style="color:#06F">GIÁO DỤC<a style="color:#666">ㅤ2 giờ trước</a></p><br>
+             <p>Cô Đinh Sao Mai - nữ giảng viên của Trường ĐH Hà Nội, khiến nhiều người chú ý bởi vẻ ngoài xinh đẹp, trong trẻo.</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon2.html" >Chi tiết</a></p>
+            </td>
+          </tr>
+        </table>
+        
+        <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><img src="Anh/999.jpg" width="200" height="150"></td>
+            <td><h3>Hỏa hoạn lúc nửa đêm, 3 ki ốt ở Hà Nội bị thiêu rụi sạch, không còn một cái gì? <img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+              <p style="color:#06F">THỜI SỰ<a style="color:#666">ㅤ2 giờ trước</a></p><br>
+             <p>Ngọn lửa bốc ra từ ki ốt kinh doanh giặt là, sau đó lan nhanh sang 2 ki ốt bên cạnh kinh doanh giày dép và hoa tươi, thiêu rụi nhiều tài sản.</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon3.html" >Chi tiết</a></p>
+            </td>
+          </tr>
+        </table>
+        
+    <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><img src="Anh/trai-cay-2.jpg" width="200" height="150"></td>
+            <td><h3>Một ngàn lí do khiến cho lựu đỏ, nho mẫu đơn, sung, xoài,... ngày càng xuống giá cực rẻ<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+              <p style="color:#06F">MUA SẮM<a style="color:#666">ㅤ2 giờ trước</a></p><br>
+             <p>Với giá ngày càng rẻ, trái cây ngoại ngày càng được tiêu thụ phổ biến trên thị trường Việt Nam</p><br>
+             <p style="text-align: left"><a href="#" ><a href="trangconreal/trangcon4.html" >Chi tiết</a></p>
+            </td>
+          </tr>
+        </table>
+        
+      <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><img src="Anh/mmm.jpg" width="200" height="150"></td>
+            <td><h3>Đến nhà sếp, tôi ngỡ ngàng khi nhận ra chị dâu tương lai đang làm giúp việc<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+              <p style="color:#06F">TÂM SỰ<a style="color:#666">ㅤ3 giờ trước</a></p><br>
+             <p>Tôi không ngờ chị dâu tương lai lại làm giúp việc ở nhà sếp mình. Nếu anh tôi biết chuyện, liệu đám cưới của 2 người có thành nữa không?</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon5.html" >Chi tiết</a></p>
+            </td>
+          </tr>
+        </table>   
+        
+         <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><img src="Anh/vv.jpg" width="200" height="150"></td>
+            <td><h3>Mẹ Doãn Hải My xinh đẹp, mẹ vợ của một cầu thủ khác cũng sở hữu nhan sắc không kém cạnh<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">GIỚI TRẺ<a style="color:#666">ㅤ2 giờ trước</a></p><br>
+             <p>Mẹ vợ của Đoàn Văn Hậu xinh đẹp, mẹ vợ của thủ môn Bùi Tiến Dũng cũng không kém cạnh.</p><br>
+             <p style="text-align: left"><a href="trangconreal/trang6.html" >Chi tiết</a></p>
+            </td>
+          </tr>
+        </table>  
+        
+         <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><img src="Anh/kk.jpg" width="200" height="150"></td>
+            <td><h3>Sao Việt chiều con như nào? Nhìn phòng nhà đại gia Đức An và Cường Đô la mà ngợp<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">NHÀ ĐẸP<a style="color:#666">ㅤ2 giờ trước</a></p><br>
+             <p>Nếu không gian riêng của bé Bồ Câu nhà Phan Như Thảo rộng 50 m2, được bố trí nội thất màu hồng - trắng lấy cảm hứng từ nhân vật unicorn thì phòng chơi con gái Cường Đô la...</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon7.html" >Chi tiết</a></p>
+            </td>
+          </tr>
+        </table>   
+        
+         <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><img src="Anh/157-Copy1.jpg" width="200" height="150"></td>
+            <td><h3>Nếu là vợ, đừng bao giờ hỏi đàn ông câu này, một khi mở lời thì bạn sẽ thua<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">YÊU<a style="color:#666">ㅤ1 giờ trước</a></p><br>
+             <p>Bởi khi bạn mở miệng, bạn đã gieo mầm mống nghi ngờ trong lòng đối phương rồi. Và một khi niềm tin bị lung lay, tình yêu có bền vững được không?</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon8.html" >Chi tiết</a></p>
+            </td>
+          </tr>
+        </table>  
+        
+         <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><img src="Anh/do-tuong-ava.jpg" width="200" height="150"></td>
+            <td><h3>Đổ tường ở chung cư ở Thủ Đức, nữ tài xế cùng ô tô suýt rơi từ lầu 4<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">THỜI SỢ<a style="color:#666">ㅤ2 giờ trước</a></p>
+             <p></p>Lúc cho ô tô vào bãi, nữ tài xế không kiểm soát được nên phương tiện húc mạnh vào bức tường phía sau, suýt rơi xuống sân chung cư.<br>
+             <p style="text-align: left"><a href="trangconreal/trangcon9.html" ><br>Chi tiết</a></p><br>
+            </td>
+          </tr>
+        </table>  
+        
+         <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><img src="Anh/oo.jpg" width="200" height="150"></td>
+            <td><h3>Truy bắt kẻ dùng dao cướp ngân hàng ở Nghệ An<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">PHÁP LUẬT<a style="color:#666">ㅤ3 giờ trước</a></p><br>
+             <p>Đối tượng sau khi bị bảo vệ và nhân viên truy bắt đã lao ra ngoài bỏ trốn. Hiện cơ quan công an đang tiến hành truy bắt.</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon10.html" >Chi tiết</a></p>
+            </td>
+          </tr>
+        </table> 
+        
+        <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><img src="Anh/thuoc-giam-can-1.jpg" width="200" height="150"></td>
+            <td><h3>Uống thuốc giảm cân để dáng đẹp, một cô gái 17 tuổi bị rối loạn tâm thần nặng, nếu không chữa kịp sẽ để lại những hậu quả khôn lường <img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">SỨC KHỎE<a style="color:#666">ㅤ2 giờ trước</a></p><br>
+             <p>Chỉ thời gian ngắn sau khi dùng thuốc giảm cân, cô gái 17 tuổi bắt đầu xuất hiện nhiều triệu chứng kỳ lạ.</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon11.html" >Chi tiết</a></p><br>
+            </td>
+          </tr>
+        </table> 
+        
+         <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><img src="Anh/nha-cua-sao-viet-av.jpg" width="200" height="150"></td>
+            <td><h3>Hoa hậu Thu Hoài khoe không gian uống cafe đẹp như mơ, biệt thự nào cũng đẳng cấp<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">NHÀ ĐẸP<a style="color:#666">ㅤ3 giờ trước</a></p><br>
+             <p>Cuộc sống của Hoa hậu Thu Hoài cùng những khối tài sản đắt giá làm nhiều người ao ước.</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon12.html" >Chi tiết</a></p>
+            </td>
+          </tr>
+          </table>
+          
+          
+          <div style="width:100%; float:left">
+          	<div style="width:48%;; float:left"><!-- gia đình-->
+                        <div style=" margin-left:5px;width:100% ; height:50px; text-align:center ; background-color:#900 ; color:#FFF">
+                            <p style=" padding-top:15px;"><b>GIA ĐÌNH</b></p>
+                        </div>
+                        
+                        <table width="100%" border="0" cellspacing="5" cellpadding="5">
+                          <tr>
+                            <td><img src="Anh/Skins/12.jpg"></td>
+                            <td style="color:#630">
+                              Tới đón con về nhà chơi với ông bà nội, thấy vợ cũ trong phòng ngủ....
+                               <p style="text-align: left"><a href="trangconreal/trangcon24.html"><br>Chi tiết</a></p>
+                            </td> 
+                             
+                          </tr>
+
+                          <tr>
+                            <td><img src="Anh/Skins/33.jpg"></td>
+                            <td style="color:#630">
+                              Văn Toàn lần đầu chia sẻ về căn biệt thự bạc tỉ ở quê và dự định...
+                             <p style="text-align: left"><a href="trangconreal/trangcon25.html"><br>Chi tiết</a></p>
+                            </td> 
+                          </tr>
+                       
+                          <tr>
+                            <td><img src="Anh/Skins/99.jpg"></td>
+                            <td style="color:#630">
+                              Cưới vợ giàu, ngỡ được làm 'chạn vương', ai ngờ con rể bị mẹ vợ...
+                               <p style="text-align: left"><a href="trangconreal/trangcon26.html"><br>Chi tiết</a></p>
+                            </td> 
+                          </tr>
+                        
+                          <tr>
+                            <td><img src="Anh/Skins/anh-minh-hoa-002.jpg"></td>
+                            <td style="color:#630">
+                              Hiệu trưởng THCS chỉ ra 3 kiểu trẻ thường học kém ở trường, cần...
+                           <p style="text-align: left"><a href="trangconreal/trangcon28.html"><br>Chi tiết</a></p>
+                            </td> 
+                          </tr>  
+                          
+                            <tr>
+                            <td><img src="Anh/Skins/a.jpg"></td>
+                            <td style="color:#630">
+                              Bữa chiều dễ nấu mà ngon đủ vị cho ngày lạnh!
+                           <p style="text-align: left"><a href="trangconreal/trangcon29.html"><br>Chi tiết</a></p>
+                            </td> 
+                          </tr>  
+                          
+                            <tr>
+                            <td><img src="Anh/Skins/55.jpg"></td>
+                            <td style="color:#630">
+                             Chị dâu bức xúc khi mẹ tặng tôi nhiều vàng trong ngày cưới
+                           <p style="text-align: left"><a href="trangconreal/trangcon27.html"><br>Chi tiết</a></p>
+                            </td> 
+                          </tr>    
+                        </table> 
+   			</div>
+           
+           
+           
+           			<div style="width:48%; float:left"><!--đọc nhiều-->
+                        <div style=" margin-left:5px;width:100% ; height:50px; text-align:center ; background-color:#009 ; color:#FFF">
+                            <p style=" padding-top:15px;"><b>ĐỌC NHIỀU</b></p>
+                        </div>
+                        <table width="100%" border="0" cellspacing="5" cellpadding="5">
+				  <tbody>
+					<tr>
+					  <td></td>
+					  <td>Xác minh dòng chữ 'lạ' tại sự kiện hàng nghìn khách Trung Quốc tham dự ở Hạ Long
+                     <p style="color:#FF0"><br>XÃ HỘI</p></td>
+          </tr>
+          
+          <tr>
+					  <td></td>
+					  <td><br>Shark Bình lần đầu công khai ôm vợ bầu, vóc dáng Phương Oanh đã thay đổi rõ rệt khi mang thai đôi
+                     <p style="color:#900"><br>SAO</p></td>
+          </tr>
+          
+          <tr>
+					  <td></td>
+					  <td><br>Doãn Hải My rạng rỡ nhận vàng mẹ chồng trao, nói một câu thể hiện vừa đẹp lại khéo
+                     <p style="color:#0FF"><br>GIỚI TRẺ</p></td>
+          </tr>
+          
+            <tr>
+					  <td></td>
+					  <td><br>Đêm tái hôn mở phong bì của vợ cũ, tôi lặng người nhìn thứ bên trong
+                     <p style="color:#F00"><br>YÊU</p></td>
+          </tr>
+          
+          <tr>
+					  <td></td>
+					  <td><br>Lời khai của nghi phạm sát hại vợ rồi giấu thi thể trong bao tải ở Vĩnh Phúc
+                     <p style="color:#0FF"><br>PHÁP LUẬT</p></td>
+          </tr>
+					
+                     <tr>
+					  <td></td>
+					  <td><br>Tháng 10 Âm lịch, 4 con giáp có nhiều bước tiến lớn, thu nhập tăng đều, tương lai không còn lo lắng
+                     <p style="color:#33C"><br>QUIZ</p></td>
+          </tr>
+          
+         
+            </tbody>
+            </table>
+                      
+           </div>
+
+          </div>
+           <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><img src=""><img src="Anh/go-1.jpg" width="200" height="150"></td>
+            <td><h3>Cắt gỗ thành khoanh mỏng "bán chơi", ai ngờ khách thích, mỗi vụ bán vài nghìn chiếc<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">MUA SẮM<a style="color:#666">ㅤ2 giờ trước</a></p><br>
+             <p>Mỗi miếng gỗ này chỉ có kích thước dưới 10cm nhưng thời gian này đang được nhiều người tìm mua, anh nông dân bán hàng nghìn chiếc.</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon13.html">Chi tiết</a></p>
+            </td>
+          </tr>
+          
+           <tr>
+            <td><img src=""><img src="Anh/Untitled-1 (2).jpg" width="200" height="150"></td>
+            <td><h3>Hoang mang khi được đồng nghiệp tặng 5 triệu đồng trong ngày sinh nhật<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">TÂM SỰ<a style="color:#666">ㅤ45 phút trước</a></p><br>
+             <p>Vào ngày sinh nhật của tôi, bạn trai không tặng quà gì. Vậy mà anh đồng nghiệp lại tặng tôi món quà hậu hĩnh làm tôi bối rối vô cùng.</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon14.html">Chi tiết</a></p>
+            </td>
+          </tr>
+          
+          <tr>
+            <td><img src=""><img src="Anh/de-coc-nuoc-da-co-dong-xu-vao-tu-lanh-av.jpg" width="200" height="150"></td>
+            <td><h3>Để cốc nước đá có đồng xu vào tủ lạnh: Lợi ích tuyệt vời ít người biết<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">MẸO VẶT<a style="color:#666">ㅤ20 phút trước</a></p><br>
+             <p>Nếu đang định đi du lịch hay có chuyến công tác xa nhà mà vẫn để thức ăn trong tủ đông thì đây là mẹo nhỏ bạn không nên bỏ qua.</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon15.html">Chi tiết</a></p>
+            </td>
+          </tr>
+          
+          
+          <tr>
+            <td><img src=""><img src="Anh/giuong-ngu-av.jpg" width="200" height="150"></td>
+            <td><h3>Tại sao đầu giường không được quay về hướng Tây?<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">NHÀ ĐẸP<a style="color:#666">ㅤ29 phút trước</a></p><br>
+             <p>Định vị hướng giường không hợp phong thủy có thể khiến người nằm trên đó gặp vấn đề về sức khỏe cũng như tác động xấu đến tài vận.</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon16.html">Chi tiết</a></p>
+            </td>
+          </tr>
+          
+          
+           <tr>
+            <td><img src=""><img src="Anh/lu-lut-av.jpg" width="200" height="150"></td>
+            <td><h3>Nước lũ ngang ngực, người dân TP Huế ôm thùng xốp bơi về nhà<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">THỜI SỰ<a style="color:#666">ㅤ3 giờ trước</a></p><br>
+             <p>Nước lũ dâng nhanh, bủa vây, chia cắt các tuyến đường trung tâm ở TP Huế và một số huyện trên địa bàn tỉnh này. Nhiều người dân phải thuê ghe đò, ôm thùng xốp bơi giữa dòng....</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon17.html">Chi tiết</a></p>
+            </td>
+          </tr>
+          </table>
+         
+     <div style="width:100%; float:left">
+        <img src="Capture.PNG" width="600" height="332"></div> 
+        
+        <table width="100%" border="0" cellspacing="5" cellpadding="5">
+        <tr>
+            <td><img src=""><img src="Anh/sao-viet (9).jpg" width="200" height="150"></td>
+            <td><h3>Chỉ 1 bức ảnh hiếm hoi xuất hiện chung, Đông Nhi để lộ mối quan hệ với bố mẹ chồng hào môn<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">SAO<a style="color:#666">ㅤ4 giờ trước</a></p><br>
+             <p>Không chỉ đi du lịch cùng bố mẹ chồng, Đông Nhi còn hội ngộ em gái ruột của Ông Cao Thắng.</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon18.html">Chi tiết</a></p>
+            </td>
+          </tr>
+          
+           <tr>
+            <td><img src=""><img src="Anh/hoa-cuc-1.jpg" width="200" height="150"></td>
+            <td><h3>Ít ai biết loại hoa cúc này có tác dụng chữa bệnh, giá đến 1,5 triệu đồng/kg<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">MUA SẮM<a style="color:#666">ㅤ4 giờ trước</a></p><br>
+             <p>Loài hoa cúc này hiện nhà vườn đang bán giá 1,5 triệu đồng/kg hoa tươi.</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon19.html">Chi tiết</a></p>
+            </td>
+          </tr>
+          
+          
+          <tr>
+            <td><img src=""><img src="Anh/Untitled-1 (3).jpg" width="200" height="150"></td>
+            <td><h3>Kết hôn nhanh sau một tháng, tôi phải trả giá vì muốn "dằn mặt" bạn trai cũ<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">TÂM SỰ<a style="color:#666">ㅤ5 giờ trước</a></p><br>
+             <p>Do không tìm hiểu kỹ, đám cưới quá nhanh chóng của tôi dẫn đến bi kịch ở thời điểm hiện tại.</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon20.html">Chi tiết</a></p>
+            </td>
+          </tr>
+          
+          
+          <tr>
+            <td><img src=""><img src="Anh/may-bay.gif" width="200" height="150"></td>
+            <td><h3>Khoảnh khắc máy bay lao thẳng xuống đất, bốc cháy tại triển lãm hàng không<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">VIDEO<a style="color:#666">ㅤ36 phút trước</a></p><br>
+             <p>ARGENTINA - Đoạn video ghi lại khoảnh khắc kinh hoàng khi một chiếc máy bay chiến đấu bất ngờ lao thẳng xuống đất và bốc cháy dữ dội tại triển lãm hàng không ở Villa Canas,...</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon21.html">Chi tiết</a></p>
+            </td>
+          </tr>
+          
+          <tr>
+            <td><img src=""><img src="Anh/toc.jpg"
+             width="200" height="150"></td>
+            <td><h3>Lựa chọn sản phẩm có chứa 5 thành phần này sẽ giúp giảm rụng tóc hiệu quả<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">LÀM ĐẸP<a style="color:#666">ㅤ26 phút trước</a></p><br>
+             <p>Để giảm thiểu rụng tóc thì bạn nên sử dụng những sản phẩm có chứa thành phần này.</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon22.html">Chi tiết</a></p>
+            </td>
+          </tr>
+ 
+          </table>
+        
+        
+        <div style="width:100%; float:left">
+        <img src="BB.PNG" width="600" height="332"></div> 
+        
+        <div style="width:100%; float:left">
+        <img src="CC.PNG" width="600" height="332"></div> 
+        
+        <div style="width:100%; float:left">
+        <img src="DD.PNG" width="600" height="332"></div> 
+        
+       
+         
+     <div style="width:100%; float:left">
+        <img src="Capture.PNG" width="600" height="332"></div> 
+        
+        <table width="100%" border="0" cellspacing="5" cellpadding="5">
+        <tr>
+            <td><img src=""><img src="Anh/da.jpg" width="200" height="150"></td>
+            <td><h3>Cách chăm sóc vùng da mỏng dưới mắt<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">LÀM ĐẸP<a style="color:#666">ㅤ1 ngày trước</a></p><br>
+             <p>Vùng da mỏng dưới mắt nếu không được chăm sóc tốt sẽ khiến gương mặt bạn trông mệt mỏi, kém tươi tắn và già nua.</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon23.html">Chi tiết</a></p>
+            </td>
+          </tr>
+          
+           <tr>
+            <td><img src=""><img src="Anh/ung-thu-da-2.jpg" width="200" height="150"></td>
+            <td><h3>Xem nhẹ nốt ruồi ở nơi ít ai để ý, người phụ nữ hối không kịp vì ung thư đã di căn<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">SỨC KHỎE<a style="color:#666">ㅤ2 giờ trước</a></p><br>
+             <p>Hầu hết chúng ta đều có ít nhất một nốt ruồi trên cơ thể. Tuy nhiên, ít ai biết rằng nốt ruồi có đặc điểm như thế nào là dấu hiệu của bệnh ung thư..</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon30.html">Chi tiết</a></p>
+            </td>
+          </tr>
+          
+          
+          <tr>
+            <td><img src=""><img src="Anh/dam-cuoi (1).jpg" width="200" height="150"></td>
+            <td><h3>Đám cưới ấn tượng trong mùa lũ, nhà trai rước dâu bằng xe cứu hộ<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">ĐỜI SỐNG<a style="color:#666">ㅤ3 giờ trước</a></p><br>
+             <p>Để rước cô dâu về nhà, chú rể Khánh dùng xe cứu hộ chở họ hàng, cô dâu vượt qua đoạn đường ngập sâu. Xe cứu hộ nhìn rất giản dị nhưng đầy ý nghĩa trong những ngày lũ ở Huế.</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon31.html">Chi tiết</a></p>
+            </td>
+          </tr>
+          
+             <tr>
+            <td><img src=""><img src="Anh/truy-na-ava.jpg" width="200" height="150"></td>
+            <td><h3>Truy nã một "ông trùm" đòi nợ thuê ở TPHCM<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">PHÁP LUẬT<a style="color:#666">ㅤ2 giờ trước</a></p><br>
+             <p>Để giữ cho da luôn mềm mịn và đủ độ ẩm trong mùa hanh khô, bạn cần ghi nhớ 5 chiêu sau.</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon32.html">Chi tiết</a></p>
+            </td>
+          </tr>
+          
+             <tr>
+            <td><img src=""><img src="Anh/sao-viet (10).jpg" width="900" height="550"></td>
+            <td><h3>Con gái chia sẻ loạt tin nhắn với Hồ Hoài Anh, khẳng định 1 điều về bố<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">SAO<a style="color:#666">ㅤ2 giờ trước</a></p><br>
+             <p>Con gái chia sẻ loạt tin nhắn với Hồ Hoài Anh, khẳng định 1 điều về bố</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon33.html">Chi tiết</a></p>
+            </td>
+          </tr>
+          
+           <tr>
+            <td><img src=""><img src="Anh/nau-com-1.jpg" width="200" height="150"></td>
+            <td><h3>Đừng nấu cơm như cũ nữa, thêm hai giọt này vào cơm thơm lừng, mẹ chồng ăn xong chỉ có khen nức nở<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">MẸO VẶT<a style="color:#666">ㅤ3 giờ trước</a></p><br>
+             <p>Khi nấu cơm, nếu chỉ cho nước thì thật thiếu sót, bạn cần cho thêm 2 thứ nữa, đảm bảo cơm căng bóng, trắng dẻo, mềm ngon..</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon34.html">Chi tiết</a></p>
+            </td>
+          </tr>
+          
+             <tr>
+            <td><img src=""><img src="Anh/Untitled-1 (4).jpg" width="200" height="150"></td>
+            <td><h3>Người đàn ông 'van xin' vợ cũ đi bước nữa và chuyện về sự văn minh hậu ly hôn<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">YÊU<a style="color:#666">ㅤ5 giờ trước</a></p><br>
+             <p>Văn minh để làm gì ư? Để chúng ta không nghĩ về nhau bằng một hơi thở dài ngán ngẩm, ngay cả khi đã đường ai nấy đi.</p><br>
+             <p style="text-align: left"><a href="trangconreal/trangcon35.html">Chi tiết</a></p>
+            </td>
+          </tr>
+          
+          
+        
+ 
+          </table>
+        
+       
+        
+        </div>
+        
+
+        
+     <div class="right"><!--phần bên phải-->
+      <div style="width:100% ; height:50px; text-align:center ; background-color:#00F ; color:#FFF"><p style=" padding-top:15px">TIN CHÍNH HÔM NAY</p>
+       </div>
+				<table width="100%" border="0" cellspacing="5" cellpadding="5">
+				  <tbody>
+					<tr>
+					  <td></td>
+					  <td><a href="trangconreal/trangcon36.html">5 loại rau giàu đạm không thua gì thịt cá bán đầy chợ</a></td>ㅤ
+          </tr>
+					<tr>
+					  <td></td>
+					  <td><br>
+            <a href="trangconreal/trangcon37.html"> Thanh niên “mắc kẹt” ở Huế đúng đợt mưa lịch sử, suýt khóc khi nhận chiếc bánh từ một ni cô</a></td>
+					</tr>
+					<tr>
+					  <td></td>
+					  <td><br><p style="color: #C69">ĐỜI SỐNG</p></td>
+					</tr>
+					<tr>
+					  <td></td>
+					  <td><br> <a href="trangconreal/trangcon38.html">Giá vàng hôm nay 17/11/2023 tăng phi mã, vàng SJC thêm 100 nghìn đồng/lượng</a></td>
+					</tr>
+					<tr>
+					 <td></td>
+					  <td><p style="color: blue"><br>MUA SẮM</p></td>
+					</tr>
+                    <tr>
+					 <td></td>
+					  <td><br><a href="trangconreal/trangcon39.html">Giải cứu tài xế mắc kẹt trong cabin xe tải ở Thanh Hóa</a></td>
+					</tr>
+                     <tr>
+					 <td></td>
+					  <td><p style="color: #FF0"><br>THỜI SỰ</p></td>
+					</tr>
+          <tr>
+            <td></td>
+             <td><br><a href="trangconreal/trangcon40.html">2 người chết khi thi công đường cao tốc: Xem xét có nên đình chỉ đơn vị thi công?</a></td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><p style="text-align: center; color:#f00"><br><br><br>LIÊN KẾT HỮU ÍCHㅤ</h2></p>
+           </tr>
+           
+      
+           <tr><a style="color">
+            <td></td>
+             <td><br>Mời độc giả đón đọc tin tức trên Vietnamnet</td>
+           </tr></a>
+
+           <tr>
+            <td></td>
+             <td><br>Cập nhật giá xe mới nhất năm 2023</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Tin về bộ trưởng Nguyễn Mạnh Hùng trên Vietnamnet</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Tra cứu điểm thi vào lớp 10 năm 2023 chính xác nhất</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Dòng chảy Thời sự nhanh và chính xác nhất</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Tin tức giải trí showbiz sao Việt mới nhất</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Tra cứu điểm chuẩn vào lớp 10 năm 2023 nhanh nhất</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Thông tin kỳ thi tốt nghiệp THPT năm 2023 mới nhất</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Tra cứu điểm thi tốt nghiệp THPT và thi lớp 10 nhanh, chi tiết nhất</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Tra cứu điểm chuẩn ĐH-CD năm 2023 chính xác nhất</td>
+           </tr>
+           
+           
+                    
+				  </tbody>
+				</table>
+   </div>
+
+      
+      
+</table>
+            
+            <div class="chien1">
+     
+   <br> <p class="codepro-note"><b>ㅤㅤTheo dõi báo trên:</b></p><br>
+  ㅤㅤ<a href="https://www.facebook.com/Chincutis1tg.Pr" target="_blank"><img src="Anh/fb.jpg" width="50" height="50"></a>
+  <a href="https://www.tiktok.com/@NhatLadyy" target="_blank"><img src="Anh/ms.jpg" width="50" height="50"></a>
+  <a href="https://www.zalo.com/0345397796" target="_blank"><img src="Anh/Skins/Logo-Zalo-Arc (1).webp" width="50" height="50"></a><br>
+     <p class="codepro-note"><b><br>ㅤ👉Liên hệ quảng cáo👈</b></p>
+          </div>
+          
+          
+ 
+          
+          
+          
+          
+            
+<div id="footer"><!--phần cuối trang wed-->
+          
+        
+      <table width="100%" border="0" cellspacing="5" cellpadding="5">
+              <tr>
+                <td>TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP CỦA CÔNG<br>
+                 TY CỔ PHẦN TRUYỀN THÔNG VIETNAMNET</td>
+                <td>CÔNG TY CỔ PHẦN TRUYỀN THÔNG VIETNAMNET</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>ĐỊA CHỈ: Tòa nhà C'land, số 156 ngõ Xã Đàn 2, Đống Đa, Hà Nội</td>
+                <td>HÀ NỘI</td>
+                <td>TP.HCM</td>
+              </tr>
+              <tr>
+                <td>ĐIỆN THOẠI: 0437.722.729 - FAX: 0437722729</td>
+                <td>SDT: 0437727988</td>
+                <td>SDT: 02838181436</td>
+              </tr>
+              
+              <tr>
+                <td>Email: tintuconline@vietnamnet.vn</td>
+                <td>SDT: 0919405885</td>
+                <td>SDT: 0919405885</td>
+              </tr>
+              
+               <tr>
+                <td>&nbsp;</td>
+                <td>Email: vietnamnetjsc.hn@vietnamnet.vn</td>
+                <td>Email: vietnamnetjsc.hcm@vietnamnet.vn</td>             
+        </tr>
+              
+    </table>
+
+        </div>
+</div>
+    <style>
+  .float-ck { position: fixed; bottom: 0px; z-index: 9000}
+  * html .float-ck {position:absolute;bottom:auto;top:expression(eval (document.documentElement.scrollTop+document.docum entElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0))) ;}
+  #float_content_right {border: 1px solid rgb(253, 2, 2), 26, 21);}
+  #hide_float_right {text-align:right; font-size: 11px;}
+  #hide_float_right a {background: #29f001; padding: 2px 4px; color: #FFF;}
+  </style>
+  <div class="float-ck" style="right: 0px" >
+  <div id="hide_float_right">
+  <a href="javascript:hide_float_right()">Tắt Quảng Cáo ❌</a></div>
+  <div id="float_content_right"> 
+  <iframe width="360" height="315" src="https://www.youtube.com/embed/vUvC4eUAcNw?si=NOrkG6virKZhjSYV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  </div>
+</body>
+
+</html>

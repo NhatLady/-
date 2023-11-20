@@ -1,0 +1,454 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tin tức 24h, Đọc báo online tin mới nhất</title>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<style>
+	#snowflakeContainer{position:absolute;left:0px;top:0px;}
+	.snowflake{padding-left:15px;font-size:14px;line-height:24px;position:fixed;color:#ebebeb;user-select:none;z-index:1000;-moz-user-select:none;-ms-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;}
+	.snowflake:hover {cursor:default}
+</style>
+<link href="menu.css" rel="stylesheet" type="text/css">
+<div id='snowflakeContainer'>
+<p class='snowflake'>❄</p>
+</div>
+<script style='text/javascript'>
+	//<![CDATA[
+	var requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var transforms=["transform","msTransform","webkitTransform","mozTransform","oTransform"];var transformProperty=getSupportedPropertyName(transforms);var snowflakes=[];var browserWidth;var browserHeight;var numberOfSnowflakes=50;var resetPosition=false;function setup(){window.addEventListener("DOMContentLoaded",generateSnowflakes,false);window.addEventListener("resize",setResetFlag,false)}setup();function getSupportedPropertyName(b){for(var a=0;a<b.length;a++){if(typeof document.body.style[b[a]]!="undefined"){return b[a]}}return null}function Snowflake(b,a,d,e,c){this.element=b;this.radius=a;this.speed=d;this.xPos=e;this.yPos=c;this.counter=0;this.sign=Math.random()<0.5?1:-1;this.element.style.opacity=0.5+Math.random();this.element.style.fontSize=4+Math.random()*30+"px"}Snowflake.prototype.update=function(){this.counter+=this.speed/5000;this.xPos+=this.sign*this.speed*Math.cos(this.counter)/40;this.yPos+=Math.sin(this.counter)/40+this.speed/30;setTranslate3DTransform(this.element,Math.round(this.xPos),Math.round(this.yPos));if(this.yPos>browserHeight){this.yPos=-50}};function setTranslate3DTransform(a,c,b){var d="translate3d("+c+"px, "+b+"px, 0)";a.style[transformProperty]=d}function generateSnowflakes(){var b=document.querySelector(".snowflake");var h=b.parentNode;browserWidth=document.documentElement.clientWidth;browserHeight=document.documentElement.clientHeight;for(var d=0;d<numberOfSnowflakes;d++){var j=b.cloneNode(true);h.appendChild(j);var e=getPosition(50,browserWidth);var a=getPosition(50,browserHeight);var c=5+Math.random()*40;var g=4+Math.random()*10;var f=new Snowflake(j,g,c,e,a);snowflakes.push(f)}h.removeChild(b);moveSnowflakes()}function moveSnowflakes(){for(var b=0;b<snowflakes.length;b++){var a=snowflakes[b];a.update()}if(resetPosition){browserWidth=document.documentElement.clientWidth;browserHeight=document.documentElement.clientHeight;for(var b=0;b<snowflakes.length;b++){var a=snowflakes[b];a.xPos=getPosition(50,browserWidth);a.yPos=getPosition(50,browserHeight)}resetPosition=false}requestAnimationFrame(moveSnowflakes)}function getPosition(b,a){return Math.round(-1*b+Math.random()*(a+2*b))}function setResetFlag(a){resetPosition=true};
+	//]]>
+</script>
+</head>
+
+<body>
+  
+	<div class="warrp"><!--Phần bao quanh-->
+    	<div><!--menu--><!--phần menu-->
+          
+
+          <div class="topnav">
+            <a class="active" href="#home">Bài Viết</a>
+            <a class="active" href="#home">Hỏi Đáp</a>
+            <a class="active" href="#home">Thảo Luận</a>
+            
+            <div class="search-container">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Tìm kiếm.." name="search">
+                <button type="submit">Submit</button>
+              </form>
+              
+            </div>
+          </div>
+
+
+
+            <div id="container" width="100%" >
+            <ul id="menu" >
+            	<li><a href="#">HOME</a></li>
+              <li><a href="#">GIẢI TRÍ</a>
+                    <ul>
+                        <li><a href="#">Sao</a></li>
+                        <li><a href="#">Show Truyền Hình</a></li>
+                        <li><a href="#">Điện Ảnh</a></li>
+                        <li><a href="#">Âm Nhạc</a></li>
+                    </ul>
+</li>
+                <li><a href="#">ĐỜI SỐNG</a>
+                    <ul>
+                        <li><a href="#">Nhịp Sống</a></li>
+                        <li><a href="#">Tổ Ấm</a></li>
+                        <li><a href="#">Bài Học Cuộc Sống</a></li>
+                        <li><a href="#">Cooking</a></li>
+                        <li><a href="#">Tiêu Dùng</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="#">XÃ HỘI</a>
+                    <ul>
+                        <li><a href="#">Thời Sự</a></li>
+                        <li><a href="#">Pháp Luật</a></li>
+                        <li><a href="#">Mạng Xã Hội</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">LÀM ĐẸP</a>
+                    <ul>
+                        <li><a href="#">Thời Trang</a></li>
+                        <li><a href="#">Lối Sống</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">SỨC KHỎE</a>
+                  <ul>
+                    <li><a href="#">Tin Tức</a></li>
+                    <li><a href="#">Tư Vấn</a></li>
+                    <li><a href="#">Dinh Dưỡng</a></li>
+                    <li><a href="#">Khỏe Đẹp</a></li>
+                    <li><a href="#">Đàn Ông</a></li>
+                    <li><a href="#">Các Bệnh</a></li>
+                    <li><a href="#">Vaccine</a></li>
+                    
+                </ul>
+                
+                </li>
+                  <li><a href="#">THẾ GIỚI</a>
+                    <ul>
+                      <li><a href="#">Tư Liệu</a></li>
+                      <li><a href="#">Phân Tích</a></li>
+                      <li><a href="#">Người Việt 5 Châu</a></li>
+                      <li><a href="#">Cuộc Sống Đó Đây</a></li>
+                      <li><a href="#">Quân Sự</a></li>
+                  </ul>
+                  </li>
+                  <li><a href="#">THỂ THAO</a>
+                    <ul>
+                    <li><a href="#">Bóng Đá</a></li>
+                    <li><a href="#">Lịch Thi Đấu</a></li>
+                    <li><a href="#">Trắc Nghiệm</a></li>
+                    <li><a href="#">BunDesLiGa</a></li>
+                    <li><a href="#">Tennis</a></li>
+                    <li><a href="#">Marathon</a></li>
+                    <li><a href="#">Các Môn Khác</a></li>
+                    <li><a href="#">Hậu Trường Video</a></li>
+                    <li><a href="#">Ảnh</a></li>
+                    <li><a href="#">Tường Thuật</a></li>
+                   
+                </ul>
+                  
+                  </li>
+                    <li><a href="#">GIÁO DỤC</a>
+                      <ul>
+                        <li><a href="#">Tin Tức</a></li>
+                        <li><a href="#">Chuyển Sinh</a></li>
+                        <li><a href="#">Chân Dung</a></li>
+                        <li><a href="#">Du Học</a></li>
+                        <li><a href="#">Diễn Đàn</a></li>
+                        <li><a href="#">Học Tiếng Anh</a></li>
+                        <li><a href="#">Giáo Dục 4.0</a></li>
+                    </ul>
+                    
+                    
+                    </li>
+                     <li><a href="#">TÂM SỰ</a>
+                      <ul>
+                      <li><a href="#">Hẹn Hò</a></li>
+</ul>
+                    </li>
+
+                      <li><a href="#">KHOA HỌC</a>
+                      <ul>
+                        <li><a href="#">Khoa Học Trong Nước</a></li>
+                            <li><a href="#">Tin Tức</a></li>
+                            <li><a href="#">Phát Minh</a></li>
+                            <li><a href="#">Ứng Dụng</a></li>
+                            <li><a href="#">Thế Giới Tự Nhiên</a></li>
+                            <li><a href="#">Thưởng Thức</a></li>
+                       </ul>
+         </li>
+                      <li><a href="#">Podcast</a>
+                        <ul>
+                        <li><a href="#">Tin Tức Hôm Nay</a></li>
+                        <li><a href="#">Tiền Làm Gì?</a></li>
+                        <li><a href="#">Tài Chính Cá Nhân</a></li>
+                        <li><a href="#">Giải Mã</a></li>
+                        <li><a href="#">Hộp Đen</a></li>
+                        <li><a href="#">Họ Nói Gì?</a></li>
+                        <li><a href="#">Ly Hôn</a></li>
+                          
+                                <li><a href="#">Thầm Thì</a></li>
+                                <li><a href="#">Bạn Ổn Không?</a></li>
+                                <li><a href="#">Ứng Dụng</a></li>
+                                <li><a href="#">Tôi Trong Gương</a></li>
+                                <li><a href="#">Chuyện Đi Làm</a></li>
+                                <li><a href="#">Úp Mở 18+</a></li>
+                                <li><a href="#">Điểm Tin</a></li>
+                                <li><a href="#">Nguy Cơ</a></li>
+                      </ul>
+                      </li>
+
+                        <li><a href="#">VIDEO</a>
+                          <ul>
+                            <li><a href="#">Thời Sự</a></li>
+                                <li><a href="#">Nhịp Sống</a></li>
+                                <li><a href="#">Food</a></li>
+                                <li><a href="#">Tôi Kể</a></li>
+                                <li><a href="#">Chuyện Núi Rừng</a></li>
+                                <li><a href="#">Pháp Luật</a></li>
+                                <li><a href="#">Giải Trí</a></li>
+                                <li><a href="#">Thể Thao</a></li>
+                                <li><a href="#">Số Hóa</a></li>
+                                <li><a href="#">Xe</a></li>
+                                <li><a href="#">Sức Khỏe</a></li>
+                                <li><a href="#">Du Lịch</a></li>
+                                <li><a href="#">Thế Giới</a></li>
+                                <li><a href="#">Khoa Học</a></li>
+                                <li><a href="#">Giáo Dục</a></li>
+                                <li><a href="#">Tọa Đàm Kinh Tế<a></li>
+                                <li><a href="#">Chủ Đề</a></li>
+                          </ul>
+                           
+                        
+                        
+                        
+                        </li>
+                          <li><a href="#">GIA ĐÌNH</a>
+
+                    <ul>
+                    <li><a href="#">Tâm Sự</a></li>
+                        <li><a href="#">Nhà Đẹp</a></li>
+                        <li><a href="#">Mẹo Vặt</a></li>
+                        <li><a href="#">Yêu</a></li>
+                        <li><a href="#">Vào Bếp</a></li>
+                        <li><a href="#">Làm Mẹ</a></li>
+                   </ul>
+                   </li>
+            </div>
+            </div>
+    	<div id="header"><!--phần đầu trang wed-->
+        </div>
+<div class="main"><!--phần thân trang wed-->
+        <br><p style="text-align: left; color:#f00">ϟ SỰ KIỆN NÓNG</p><br>
+        <font size="5px"><h3 style="text-align:left; color:#069">Mẹ Doãn Hải My xinh đẹp, mẹ vợ của một cầu thủ khác cũng sở hữu nhan sắc không kém cạnh</h3></font><br>
+  <p style="text-align:left; color:#06F"><a style="color:#666">Thứ ba, 14/11/2023 10:07
+
+
+</a></p><br>
+        <font size="3px"><h3>Mẹ vợ của Đoàn Văn Hậu xinh đẹp, mẹ vợ của thủ môn Bùi Tiến Dũng cũng không kém cạnh.</h3></font></br>
+        <div style="text-align:left; color:#03F">
+				<table width="100%" border="0" cellspacing="5" cellpadding="5">
+				  <tbody>
+					<tr>
+					  <td><img src="Anh/Skins/bg-li-list-news.jpg" width="5" height="5" alt=""/></td>
+					  <td>Doãn Hải My - vợ Đoàn Văn Hậu cả đám cưới chỉ khoe một góc nghiêng thần thánh, góc còn lại có bị dìm?</td>
+					</tr>
+					<tr>
+					  <td><img src="Anh/Skins/bg-li-list-news.jpg" width="5" height="5" alt=""/></td>
+					  <td>Bố Doãn Hải My là dân chơi Hiphop nổi tiếng đời đầu, hiện tại là doanh nhân kiêm chủ nhà hàng ở vị trí đắc địa Hà Nội</td>
+					</tr>
+					<tr>
+					  <td><img src="Anh/Skins/bg-li-list-news.jpg" width="5" height="5" alt=""/></td>
+					  <td>Vừa lấy chồng 1 ngày, Doãn Hải My liền có động thái chuẩn con dâu Thái Bình được người ở quê khen nức nở</td>
+					</tr>
+				  </tbody>
+				</table>
+  </div><br>
+        <p>Buổi lễ cưới hỏi của Đoàn Văn Hậu và Doãn Hải My được tổ chức vào ngày 11/11 vừa qua. Thế nhưng, đã 2 ngày trôi qua, dư âm về tiệc cưới ngập tràn visual ấy vẫn còn được dân tình nhắc mãi. Không chỉ cặp trai tài gái sắc mà nhị vị phụ huynh của cặp đôi cũng khiến ai nấy phải trầm trồ ngưỡng mộ. Đặc biệt là bố mẹ của Doãn Hải My, nhiều người không khỏi bất ngờ trước vóc dáng "siêu mẫu"của mẹ và sự phong độ của bố cô dâu. </p><br>
+       <p>Nhân dịp này, cộng đồng mạng cũng có cơ hội điểm lại gia đình các đồng đội của Đoàn Văn Hậu ở tuyển quốc gia. Và thực tế, không chỉ có mẹ vợ của hậu vệ sinh năm 1999 xinh đẹp mà trước đó, người hâm mộ cũng từng trầm trồ về nhan sắc mẹ vợ thủ môn Bùi Tiến Dũng. </p><br>
+<div class="anh"><img src="../Anh/me-vo--2.jpg" width="968" height="512"><br></div>
+<p style="text-align:center"><br>Mẹ vợ Bùi Tiến Dũng chụp ảnh cùng con rể và 2 con gái. Ảnh: FBNV</p>
+
+  <p><br>Được biết, kể từ khi Bùi Tiến Dũng và người mẫu Dianka chào đón con trai đầu lòng thì mẹ vợ đã từ Ukraina sang hẳn Việt Nam để phụ giúp chăm cháu. Bà hiếm khi chia sẻ hình ảnh cá nhân lên mạng xã hội nhưng thường xuất hiện qua ống kính của con gái và con rể. </p><br>
+
+ <p><br>Không rõ bà ngoại người Ukraina sinh năm bao nhiêu nhưng theo nhiều người dự đoán thì bà chỉ ở tuổi tứ tuần. Bởi cô con gái lớn Dianka mới sinh năm 2000, dưới cô còn có một em trai, một em gái. Trong những bức hình xuất hiện cùng các con, các cháu, mẹ vợ Bùi Tiến Dũng nhiều lần "giật spotlight" bởi thân hình gợi cảm và mái tóc đen ấn tượng. </p>
+ <br><img src="../Anh/me-vo--3.jpg" width="1000" height="700">
+ <p style="text-align:center"><br>Bà ngoại trẻ trung khi chụp ảnh cùng con rể và con gái. Ảnh: FBNV</p>
+ 
+<p><br>Dù đã trải qua 3 lần sinh nở nhưng dường như độ trẻ trung cũng như thần thái sang trọng của bà không thua kém gì các con. Mẹ vợ của Bùi Tiến Dũng cũng diện đa dạng các phong cách, từ gợi cảm, quyến rũ đến khỏe khoắn, quý phái. Thậm chí, kể cả trang điểm cùng một tone với con gái cưng bà cũng không hề bị lấn át. </p>
+<p><br>Dianka nhiều lần khoe ảnh chụp với mẹ và ca ngợi bà là người mẹ "đẹp nhất thế giới". Tuy nhiên, nếu như cô không chú thích thì nhiều người không biết, chắc hẳn sẽ lầm bà là chị em với bà xã Bùi Tiến Dũng. </p>
+ <br><img src="anhhh.PNG" width="1007" height="583">
+  <img src="Capturec.PNG" width="863" height="340"></div>
+<div class="right"><!--phần bên phải-->
+     <div style="width:100% ; height:50px; text-align:center ; background-color:#00F ; color:#FFF"><p style=" padding-top:15px">TIN CHÍNH HÔM NAY</p>
+  </div>
+				<table width="100%" border="0" cellspacing="5" cellpadding="5">
+				  <tbody>
+					<tr>
+					  <td></td>
+					  <td>Quên tháo chun buộc tóc cho học sinh, cô giáo bị phụ huynh "tố" trên MXH và phải nghỉ việc?</td>ㅤ
+          </tr>
+					<tr>
+					  <td></td>
+					  <td><br>
+              Nam thần Việt từ bỏ showbiz, cưới vợ giàu, nổi tiếng, tuổi U60 ngoại hình "lột xác" nhờ giảm...</td>
+					</tr>
+					<tr>
+					  <td></td>
+					  <td><br><p style="color:blue">Sao</p></td>
+					</tr>
+					<tr>
+					  <td></td>
+					  <td><br>Phụ huynh than 'nhìn suất ăn của con mà thắt lòng', hiệu trưởng nói gì?</td>
+					</tr>
+					<tr>
+					 <td></td>
+					  <td><p style="color: blue"><br>Đời Sống</p></td>
+					</tr>
+                    <tr>
+					 <td></td>
+					  <td><br>Hiệu trưởng phải gửi hình ảnh suất ăn bán trú hàng ngày về phòng giáo dục !</td>
+					</tr>
+                     <tr>
+					 <td></td>
+					  <td><p style="color: blue"><br>Giáo dục</p></td>
+					</tr>
+          <tr>
+            <td></td>
+             <td><br>2 người chết khi thi công đường cao tốc: Xem xét có nên đình chỉ đơn vị thi công?</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><p style="text-align: center; color:#f00"><br><br><br>LIÊN KẾT HỮU ÍCHㅤ</h2></p>
+           </tr>
+           
+      
+           <tr><a style="color">
+            <td></td>
+             <td><br>Mời độc giả đón đọc tin tức trên Vietnamnet</td>
+           </tr></a>
+
+           <tr>
+            <td></td>
+             <td><br>Cập nhật giá xe mới nhất năm 2023</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Tin về bộ trưởng Nguyễn Mạnh Hùng trên Vietnamnet</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Tra cứu điểm thi vào lớp 10 năm 2023 chính xác nhất</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Dòng chảy Thời sự nhanh và chính xác nhất</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Tin tức giải trí showbiz sao Việt mới nhất</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Tra cứu điểm chuẩn vào lớp 10 năm 2023 nhanh nhất</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Thông tin kỳ thi tốt nghiệp THPT năm 2023 mới nhất</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Tra cứu điểm thi tốt nghiệp THPT và thi lớp 10 nhanh, chi tiết nhất</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Tra cứu điểm chuẩn ĐH-CD năm 2023 chính xác nhất</td>
+           </tr>
+           
+           
+                    
+				  </tbody>
+				</table>
+</div>
+
+      
+      
+</table>
+            
+            <div class="chien1">
+     
+   <br> <p class="codepro-note"><b>ㅤㅤTheo dõi báo trên:</b></p><br>
+  ㅤㅤ<a href="https://www.facebook.com/Chincutis1tg.Pr" target="_blank"><img src="Anh/fb.jpg" width="50" height="50"></a>
+  <a href="https://www.tiktok.com/@NhatLadyy" target="_blank"><img src="Anh/ms.jpg" width="50" height="50"></a>
+  <a href="https://www.zalo.com/0345397796" target="_blank"><img src="Anh/Skins/Logo-Zalo-Arc (1).webp" width="50" height="50"></a><br>
+     <p class="codepro-note"><b><br>ㅤ👉Liên hệ quảng cáo👈</b></p>
+          </div>
+       
+  <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><img src="../Anh/00.jpg" width="200" height="150"></td>
+            <td><h3>Bác sĩ nha khoa tiết lộ 4 biểu hiện là “báo động đỏ” của bệnh ung thư miệng<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">SỨC KHỎE<a style="color:#666">ㅤ6 phút trước</a></p><br>
+             <p>Chúng ta cũng nên kiểm tra miệng thường xuyên ở nhà để kịp thời phát hiện ra dấu hiệu của một căn bệnh chết người là ung thư miệng.</p><br>
+             <p style="text-align: left"><a href="#" >Chi tiết</a></p>
+            </td>
+          </tr>
+</table>  
+          
+           <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><img src="../Anh/000.jpg" width="200" height="150"></td>
+            <td><h3>Bé gái 9 tuổi gần như bị mù, thủ phạm có thể cũng đang ở quanh bạn, nên hãy cẩn trọng với những người không cùng máu mủ<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">SỨC KHỎE<a style="color:#666">ㅤ20 phút trước</a></p><br>
+             <p>Cách đây vài tháng, thị lực của bé gái 9 tuổi Tiểu Mỹ mắt phải giảm mạnh, có lần chỉ còn 1/10 gần như bị mù..</p><br>
+             <p style="text-align: left"><a href="#" >Chi tiết</a></p>
+            </td>
+          </tr>
+          </table> 
+          
+           <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><img src="../Anh/1111.jpg" width="200" height="150"></td>
+            <td><h3>Uể oải, chán ăn, buồn nôn, khó thở, cùng nhiều bệnh tiết khác,... nam sinh choáng váng với chẩn đoán suy thận giai đoạn cuối<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">SỨC KHỎE<a style="color:#666">ㅤ3 giờ trước</a></p><br>
+             <p>Sau khi phát hiện suy thận giai đoạn cuối, Dũng xin bảo lưu kết quả học tập để đến bệnh viện lọc máu theo chu kỳ 3 lần/tuần.</p><br>
+             <p style="text-align: left"><a href="#" >Chi tiết</a></p>
+            </td>
+          </tr>
+          </table>  
+          
+             <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><img src="../Anh/2.jpg" width="200" height="150"></td>
+            <td><h3>Nguyên tắc '3 nửa phút' ai cũng có thể thực hiện được để tránh bị đột quỵ, có thể giúp đỡ mình hoặc người thân trong gia đình mình<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">SỨC KHỎE<a style="color:#666">ㅤ7 giờ trước</a></p><br>
+             <p>Thời tiết giao mùa, nhất là khi nhiệt độ môi trường giảm xuống đột ngột có thể khiến cho nhiều bệnh lý trở nặng như các bệnh đường hô hấp (hen phế quản, viêm phế quản mạn...</p><br>
+             <p style="text-align: left"><a href="#" >Chi tiết</a></p>
+            </td>
+          </tr>
+          </table>  
+  
+ <img src="Capturet.PNG" width="1000" height="477">
+          
+          
+          
+<div id="footer"><!--phần cuối trang wed-->
+          
+        
+      <table width="100%" border="0" cellspacing="5" cellpadding="5">
+              <tr>
+                <td>TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP CỦA CÔNG<br>
+                 TY CỔ PHẦN TRUYỀN THÔNG VIETNAMNET</td>
+                <td>CÔNG TY CỔ PHẦN TRUYỀN THÔNG VIETNAMNET</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>ĐỊA CHỈ: Tòa nhà C'land, số 156 ngõ Xã Đàn 2, Đống Đa, Hà Nội</td>
+                <td>HÀ NỘI</td>
+                <td>TP.HCM</td>
+              </tr>
+              <tr>
+                <td>ĐIỆN THOẠI: 0437.722.729 - FAX: 0437722729</td>
+                <td>SDT: 0437727988</td>
+                <td>SDT: 02838181436</td>
+              </tr>
+              
+              <tr>
+                <td>Email: tintuconline@vietnamnet.vn</td>
+                <td>SDT: 0919405885</td>
+                <td>SDT: 0919405885</td>
+              </tr>
+              
+               <tr>
+                <td>&nbsp;</td>
+                <td>Email: vietnamnetjsc.hn@vietnamnet.vn</td>
+                <td>Email: vietnamnetjsc.hcm@vietnamnet.vn</td>             
+        </tr>
+              
+    </table>
+
+</div>
+</div>
+ 
+</body>
+
+</html>

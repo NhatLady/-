@@ -1,0 +1,480 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tin tức 24h, Đọc báo online tin mới nhất</title>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<style>
+	#snowflakeContainer{position:absolute;left:0px;top:0px;}
+	.snowflake{padding-left:15px;font-size:14px;line-height:24px;position:fixed;color:#ebebeb;user-select:none;z-index:1000;-moz-user-select:none;-ms-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;}
+	.snowflake:hover {cursor:default}
+</style>
+<link href="menu.css" rel="stylesheet" type="text/css">
+<div id='snowflakeContainer'>
+<p class='snowflake'>❄</p>
+</div>
+<script style='text/javascript'>
+	//<![CDATA[
+	var requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var transforms=["transform","msTransform","webkitTransform","mozTransform","oTransform"];var transformProperty=getSupportedPropertyName(transforms);var snowflakes=[];var browserWidth;var browserHeight;var numberOfSnowflakes=50;var resetPosition=false;function setup(){window.addEventListener("DOMContentLoaded",generateSnowflakes,false);window.addEventListener("resize",setResetFlag,false)}setup();function getSupportedPropertyName(b){for(var a=0;a<b.length;a++){if(typeof document.body.style[b[a]]!="undefined"){return b[a]}}return null}function Snowflake(b,a,d,e,c){this.element=b;this.radius=a;this.speed=d;this.xPos=e;this.yPos=c;this.counter=0;this.sign=Math.random()<0.5?1:-1;this.element.style.opacity=0.5+Math.random();this.element.style.fontSize=4+Math.random()*30+"px"}Snowflake.prototype.update=function(){this.counter+=this.speed/5000;this.xPos+=this.sign*this.speed*Math.cos(this.counter)/40;this.yPos+=Math.sin(this.counter)/40+this.speed/30;setTranslate3DTransform(this.element,Math.round(this.xPos),Math.round(this.yPos));if(this.yPos>browserHeight){this.yPos=-50}};function setTranslate3DTransform(a,c,b){var d="translate3d("+c+"px, "+b+"px, 0)";a.style[transformProperty]=d}function generateSnowflakes(){var b=document.querySelector(".snowflake");var h=b.parentNode;browserWidth=document.documentElement.clientWidth;browserHeight=document.documentElement.clientHeight;for(var d=0;d<numberOfSnowflakes;d++){var j=b.cloneNode(true);h.appendChild(j);var e=getPosition(50,browserWidth);var a=getPosition(50,browserHeight);var c=5+Math.random()*40;var g=4+Math.random()*10;var f=new Snowflake(j,g,c,e,a);snowflakes.push(f)}h.removeChild(b);moveSnowflakes()}function moveSnowflakes(){for(var b=0;b<snowflakes.length;b++){var a=snowflakes[b];a.update()}if(resetPosition){browserWidth=document.documentElement.clientWidth;browserHeight=document.documentElement.clientHeight;for(var b=0;b<snowflakes.length;b++){var a=snowflakes[b];a.xPos=getPosition(50,browserWidth);a.yPos=getPosition(50,browserHeight)}resetPosition=false}requestAnimationFrame(moveSnowflakes)}function getPosition(b,a){return Math.round(-1*b+Math.random()*(a+2*b))}function setResetFlag(a){resetPosition=true};
+	//]]>
+</script>
+</head>
+
+<body>
+  
+	<div class="warrp"><!--Phần bao quanh-->
+    	<div><!--menu--><!--phần menu-->
+          
+
+          <div class="topnav">
+            <a class="active" href="#home">Bài Viết</a>
+            <a class="active" href="#home">Hỏi Đáp</a>
+            <a class="active" href="#home">Thảo Luận</a>
+            
+            <div class="search-container">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Tìm kiếm.." name="search">
+                <button type="submit">Submit</button>
+              </form>
+              
+            </div>
+          </div>
+
+
+
+            <div id="container" width="100%" >
+            <ul id="menu" >
+            	<li><a href="#">HOME</a></li>
+              <li><a href="#">GIẢI TRÍ</a>
+                    <ul>
+                        <li><a href="#">Sao</a></li>
+                        <li><a href="#">Show Truyền Hình</a></li>
+                        <li><a href="#">Điện Ảnh</a></li>
+                        <li><a href="#">Âm Nhạc</a></li>
+                    </ul>
+</li>
+                <li><a href="#">ĐỜI SỐNG</a>
+                    <ul>
+                        <li><a href="#">Nhịp Sống</a></li>
+                        <li><a href="#">Tổ Ấm</a></li>
+                        <li><a href="#">Bài Học Cuộc Sống</a></li>
+                        <li><a href="#">Cooking</a></li>
+                        <li><a href="#">Tiêu Dùng</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="#">XÃ HỘI</a>
+                    <ul>
+                        <li><a href="#">Thời Sự</a></li>
+                        <li><a href="#">Pháp Luật</a></li>
+                        <li><a href="#">Mạng Xã Hội</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">LÀM ĐẸP</a>
+                    <ul>
+                        <li><a href="#">Thời Trang</a></li>
+                        <li><a href="#">Lối Sống</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">SỨC KHỎE</a>
+                  <ul>
+                    <li><a href="#">Tin Tức</a></li>
+                    <li><a href="#">Tư Vấn</a></li>
+                    <li><a href="#">Dinh Dưỡng</a></li>
+                    <li><a href="#">Khỏe Đẹp</a></li>
+                    <li><a href="#">Đàn Ông</a></li>
+                    <li><a href="#">Các Bệnh</a></li>
+                    <li><a href="#">Vaccine</a></li>
+                    
+                </ul>
+                
+                </li>
+                  <li><a href="#">THẾ GIỚI</a>
+                    <ul>
+                      <li><a href="#">Tư Liệu</a></li>
+                      <li><a href="#">Phân Tích</a></li>
+                      <li><a href="#">Người Việt 5 Châu</a></li>
+                      <li><a href="#">Cuộc Sống Đó Đây</a></li>
+                      <li><a href="#">Quân Sự</a></li>
+                  </ul>
+                  </li>
+                  <li><a href="#">THỂ THAO</a>
+                    <ul>
+                    <li><a href="#">Bóng Đá</a></li>
+                    <li><a href="#">Lịch Thi Đấu</a></li>
+                    <li><a href="#">Trắc Nghiệm</a></li>
+                    <li><a href="#">BunDesLiGa</a></li>
+                    <li><a href="#">Tennis</a></li>
+                    <li><a href="#">Marathon</a></li>
+                    <li><a href="#">Các Môn Khác</a></li>
+                    <li><a href="#">Hậu Trường Video</a></li>
+                    <li><a href="#">Ảnh</a></li>
+                    <li><a href="#">Tường Thuật</a></li>
+                   
+                </ul>
+                  
+                  </li>
+                    <li><a href="#">GIÁO DỤC</a>
+                      <ul>
+                        <li><a href="#">Tin Tức</a></li>
+                        <li><a href="#">Chuyển Sinh</a></li>
+                        <li><a href="#">Chân Dung</a></li>
+                        <li><a href="#">Du Học</a></li>
+                        <li><a href="#">Diễn Đàn</a></li>
+                        <li><a href="#">Học Tiếng Anh</a></li>
+                        <li><a href="#">Giáo Dục 4.0</a></li>
+                    </ul>
+                    
+                    
+                    </li>
+                     <li><a href="#">TÂM SỰ</a>
+                      <ul>
+                      <li><a href="#">Hẹn Hò</a></li>
+</ul>
+                    </li>
+
+                      <li><a href="#">KHOA HỌC</a>
+                      <ul>
+                        <li><a href="#">Khoa Học Trong Nước</a></li>
+                            <li><a href="#">Tin Tức</a></li>
+                            <li><a href="#">Phát Minh</a></li>
+                            <li><a href="#">Ứng Dụng</a></li>
+                            <li><a href="#">Thế Giới Tự Nhiên</a></li>
+                            <li><a href="#">Thưởng Thức</a></li>
+                       </ul>
+         </li>
+                      <li><a href="#">Podcast</a>
+                        <ul>
+                        <li><a href="#">Tin Tức Hôm Nay</a></li>
+                        <li><a href="#">Tiền Làm Gì?</a></li>
+                        <li><a href="#">Tài Chính Cá Nhân</a></li>
+                        <li><a href="#">Giải Mã</a></li>
+                        <li><a href="#">Hộp Đen</a></li>
+                        <li><a href="#">Họ Nói Gì?</a></li>
+                        <li><a href="#">Ly Hôn</a></li>
+                          
+                                <li><a href="#">Thầm Thì</a></li>
+                                <li><a href="#">Bạn Ổn Không?</a></li>
+                                <li><a href="#">Ứng Dụng</a></li>
+                                <li><a href="#">Tôi Trong Gương</a></li>
+                                <li><a href="#">Chuyện Đi Làm</a></li>
+                                <li><a href="#">Úp Mở 18+</a></li>
+                                <li><a href="#">Điểm Tin</a></li>
+                                <li><a href="#">Nguy Cơ</a></li>
+                      </ul>
+                      </li>
+
+                        <li><a href="#">VIDEO</a>
+                          <ul>
+                            <li><a href="#">Thời Sự</a></li>
+                                <li><a href="#">Nhịp Sống</a></li>
+                                <li><a href="#">Food</a></li>
+                                <li><a href="#">Tôi Kể</a></li>
+                                <li><a href="#">Chuyện Núi Rừng</a></li>
+                                <li><a href="#">Pháp Luật</a></li>
+                                <li><a href="#">Giải Trí</a></li>
+                                <li><a href="#">Thể Thao</a></li>
+                                <li><a href="#">Số Hóa</a></li>
+                                <li><a href="#">Xe</a></li>
+                                <li><a href="#">Sức Khỏe</a></li>
+                                <li><a href="#">Du Lịch</a></li>
+                                <li><a href="#">Thế Giới</a></li>
+                                <li><a href="#">Khoa Học</a></li>
+                                <li><a href="#">Giáo Dục</a></li>
+                                <li><a href="#">Tọa Đàm Kinh Tế<a></li>
+                                <li><a href="#">Chủ Đề</a></li>
+                          </ul>
+                           
+                        
+                        
+                        
+                        </li>
+                          <li><a href="#">GIA ĐÌNH</a>
+
+                    <ul>
+                    <li><a href="#">Tâm Sự</a></li>
+                        <li><a href="#">Nhà Đẹp</a></li>
+                        <li><a href="#">Mẹo Vặt</a></li>
+                        <li><a href="#">Yêu</a></li>
+                        <li><a href="#">Vào Bếp</a></li>
+                        <li><a href="#">Làm Mẹ</a></li>
+                   </ul>
+                   </li>
+            </div>
+            </div>
+    	<div id="header"><!--phần đầu trang wed-->
+        </div>
+<div class="main"><!--phần thân trang wed-->
+        <br><p style="text-align: left; color:#f00">ϟ SỰ KIỆN NÓNG</p><br>
+        <font size="5px"><h3 style="text-align:left; color:#069">Tại sao đầu giường không được quay về hướng Tây?</h3></font><br>
+        
+        <p style="text-align:left; color:#06F"><a style="color:#666">Thứ tư, 15/11/2023 14:31
+
+
+
+</a></p><br>
+        <font size="3px"><h3>Định vị hướng giường không hợp phong thủy có thể khiến người nằm trên đó gặp vấn đề về sức khỏe cũng như tác động xấu đến tài vận.
+</h3></font></br>
+        <div style="text-align:left; color:#03F">
+				<table width="100%" border="0" cellspacing="5" cellpadding="5">
+				  <tbody>
+					<tr>
+					  <td><img src="Anh/Skins/bg-li-list-news.jpg" width="5" height="5" alt=""/></td>
+					  <td>Đầu giường có 3 thứ này con đàn cháu đống, càng về hậu vận càng viên mãn hạnh phúc</td>
+					</tr>
+					<tr>
+					  <td><img src="Anh/Skins/bg-li-list-news.jpg" width="5" height="5" alt=""/></td>
+					  <td>Tại sao trên giường khách sạn lại có 4 chiếc gối?</td>
+					</tr>
+					<tr>
+					  <td><img src="Anh/Skins/bg-li-list-news.jpg" width="5" height="5" alt=""/></td>
+					  <td>Cô gái kiếm 12 triệu/tháng nhờ dịch vụ "chia nửa giường ngủ": Khách hàng phải theo nguyên tắc đặc biệt
+</td>
+					</tr>
+				  </tbody>
+				</table>
+  </div><br>
+        <p>Phòng ngủ là nơi rất quan trọng, đó là trạm tiếp năng lượng hàng ngày của con người. Môi trường phòng ngủ sẽ ảnh hưởng trực tiếp đến sự nghỉ ngơi và giấc ngủ, vì vậy phòng ngủ phải thoải mái, thiết kế đúng phong thủy thì mới có thể tiếp năng lượng cho con người một cách tốt nhất.
+</p><br>
+   <p>Trong phòng ngủ, bạn phải đặc biệt chú ý đến giường ngủ, nhất là phương hướng kê giường. Định vị hướng giường không hợp phong thủy có thể khiến người nằm trên đó gặp vấn đề về sức khỏe cũng như tác động xấu đến tài vận.
+</p><br>
+
+
+
+       
+<div class="anh"><img src="../Anh/giuong-ngu-1.jpg" width="968" height="512"><br></div>
+<p><br><p style="text-align:center">Tại sao đầu giường không được quay về hướng Tây?</p>
+ 
+  <p><br>Khi kê giường ngủ, bạn tuyệt đối không được kê đầu giường quay về hướng Tây. Nếu đầu giường kê hướng Tây, có thể sẽ khiến bạn bị máu dồn lên não nhiều hơn khi nằm trên giường, gây khó ngủ.</p><br>
+   <p>Sở dĩ như vậy vì trên Trái đất luôn tồn tại từ trường của hai cực Bắc và Nam. Trong cơ thể con người cũng có từ trường. Nếu kê giường ngủ hướng Tây, tức nằm ngủ mà đầu quay về hướng Đông, chân quay về hướng Tây là trái với quy luật của từ trường tự nhiên, dễ ảnh hưởng tới quá trình tuần hoàn máu trong cơ thể.</p><br>
+   <div class="anh"><img src="../Anh/giuong-ngu-2 (1).jpg" width="968" height="512"><br></div>
+   <p><br>Tốt hơn hết đầu giường ngủ nên quay về hướng Bắc hoặc hướng Nam. Bởi trong xây dựng, người ta thường chọn nhà hướng Bắc hoặc Nam. Đặc biệt, nhà hướng Nam có đặc điểm là dễ hấp thụ ánh sáng mặt trời, giúp sinh dương khí nên giúp con người có nhiều sinh lực hơn.</p><br>
+   <p>Khi kê giường hướng Bắc – Nam, chúng ta có thể duy trì sự cân bằng âm dương trong cơ thể, giúp ngủ ngon hơn và mang lại lợi ích cho sức khỏe thể chất và tinh thần.</p><br>
+   <div class="anh"><img src="../Anh/giuong-ngu-3.jpg" width="968" height="512"><br></div>
+   
+   
+  <h3><br>Một số lưu ý khác khi kê giường ngủ
+</h3></br>
+   <p>- Không kê giường thẳng với cửa chính của phòng ngủ, vì sẽ làm tán khí và sát khí xông thẳng vào người nằm, gây nguy hiểm cho sức khỏe và ảnh hưởng đường công danh của gia chủ.</p><br>
+   <p>- Đầu giường không để xà ngang ép đỉnh, nếu không sẽ không có lợi cho sức khỏe của gia chủ.</p><br>
+   <p>- Không đặt gương chiếu thẳng vào đầu giường hoặc tại vị trí mà ngồi ở giường thấy hình ảnh của mình trong gương. Điều này dễ khiến người nằm trên giường ngủ không ngon, dễ bị giật mình.</p><br>
+   <p>- Giường ngủ cần kê tại vị trí có khoảng trống để khi tỉnh giấc ngồi dậy có thể bước xuống bên trái, bên phải hoặc phía trước, như vậy sẽ giúp khí lưu thông tốt hơn, người ngủ sẽ thấy dễ chịu, khoan khoái hơn.</p><br>
+   <p>- Giường ngủ không kê sát vào cửa sổ để tránh ánh nắng mặt trời chiếu thẳng vào đầu giường hoặc tránh nước mưa hắt qua cửa sổ.</p><br>
+   <p>- Không kê đầu giường sát nhà vệ sinh kẻo ảnh hưởng tới sức khỏe.</p><br>
+   <p>- Giường không nên chiếu thẳng vào bếp, vì như vậy lửa bếp cháy nóng, khói mỡ khi xào nấu xông vào sẽ gây khó chịu cho người nằm trên giường.</p><br>
+   <p>- Không nên để “lộ không” nơi đầu giường, tức đầu giường không nên để chơi vơi, không có chỗ tựa.</p><br>
+   <p>- Giường ngủ không được đặt ở vị trí có góc nhọn, vì góc nhọn sẽ tạo sát khí không tốt.</p><br>
+
+<p>(*) Thông tin trong bài chỉ mang tính chất tham khảo!</p><br>
+   
+ 
+  <img src="ass.PNG" width="1000" height="598"> 
+  <img src="Capturec.PNG" width="863" height="340">
+</div>
+<div class="right"><!--phần bên phải-->
+     <div style="width:100% ; height:50px; text-align:center ; background-color:#00F ; color:#FFF"><p style=" padding-top:15px">TIN CHÍNH HÔM NAY</p>
+  </div>
+				<table width="100%" border="0" cellspacing="5" cellpadding="5">
+				  <tbody>
+					<tr>
+					  <td></td>
+					  <td>Quên tháo chun buộc tóc cho học sinh, cô giáo bị phụ huynh "tố" trên MXH và phải nghỉ việc?</td>ㅤ
+          </tr>
+					<tr>
+					  <td></td>
+					  <td><br>
+              Nam thần Việt từ bỏ showbiz, cưới vợ giàu, nổi tiếng, tuổi U60 ngoại hình "lột xác" nhờ giảm...</td>
+					</tr>
+					<tr>
+					  <td></td>
+					  <td><br><p style="color:blue">Sao</p></td>
+					</tr>
+					<tr>
+					  <td></td>
+					  <td><br>Phụ huynh than 'nhìn suất ăn của con mà thắt lòng', hiệu trưởng nói gì?</td>
+					</tr>
+					<tr>
+					 <td></td>
+					  <td><p style="color: blue"><br>Đời Sống</p></td>
+					</tr>
+                    <tr>
+					 <td></td>
+					  <td><br>Hiệu trưởng phải gửi hình ảnh suất ăn bán trú hàng ngày về phòng giáo dục !</td>
+					</tr>
+                     <tr>
+					 <td></td>
+					  <td><p style="color: blue"><br>Giáo dục</p></td>
+					</tr>
+          <tr>
+            <td></td>
+             <td><br>2 người chết khi thi công đường cao tốc: Xem xét có nên đình chỉ đơn vị thi công?</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><p style="text-align: center; color:#f00"><br><br><br>LIÊN KẾT HỮU ÍCHㅤ</h2></p>
+           </tr>
+           
+      
+           <tr><a style="color">
+            <td></td>
+             <td><br>Mời độc giả đón đọc tin tức trên Vietnamnet</td>
+           </tr></a>
+
+           <tr>
+            <td></td>
+             <td><br>Cập nhật giá xe mới nhất năm 2023</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Tin về bộ trưởng Nguyễn Mạnh Hùng trên Vietnamnet</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Tra cứu điểm thi vào lớp 10 năm 2023 chính xác nhất</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Dòng chảy Thời sự nhanh và chính xác nhất</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Tin tức giải trí showbiz sao Việt mới nhất</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Tra cứu điểm chuẩn vào lớp 10 năm 2023 nhanh nhất</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Thông tin kỳ thi tốt nghiệp THPT năm 2023 mới nhất</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Tra cứu điểm thi tốt nghiệp THPT và thi lớp 10 nhanh, chi tiết nhất</td>
+           </tr>
+
+           <tr>
+            <td></td>
+             <td><br>Tra cứu điểm chuẩn ĐH-CD năm 2023 chính xác nhất</td>
+           </tr>
+           
+           
+                    
+				  </tbody>
+				</table>
+</div>
+
+      
+      
+</table>
+            
+            <div class="chien1">
+     
+   <br> <p class="codepro-note"><b>ㅤㅤTheo dõi báo trên:</b></p><br>
+  ㅤㅤ<a href="https://www.facebook.com/Chincutis1tg.Pr" target="_blank"><img src="Anh/fb.jpg" width="50" height="50"></a>
+  <a href="https://www.tiktok.com/@NhatLadyy" target="_blank"><img src="Anh/ms.jpg" width="50" height="50"></a>
+  <a href="https://www.zalo.com/0345397796" target="_blank"><img src="Anh/Skins/Logo-Zalo-Arc (1).webp" width="50" height="50"></a><br>
+     <p class="codepro-note"><b><br>ㅤ👉Liên hệ quảng cáo👈</b></p>
+          </div>
+       
+  <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><img src="../Anh/khai-ava.jpg" width="200" height="150"></td>
+            <td><h3>Lời khai của nghi phạm sát hại vợ rồi giấu thi thể trong bao tải ở Vĩnh Phúc, những chi tiết rất rùng rợn, ám ảnh cộng đồng mạng <img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">PHÁP LUẬT<a style="color:#666">ㅤ3 ngày trước</a></p><br>
+             <p>Trong lúc cự cãi, Nguyễn Văn Tám đã bóp cổ vợ đến chết sau đó giấu thi thể và bỏ trốn vào nam.</p><br>
+             <p style="text-align: left"><a href="#" >Chi tiết</a></p>
+            </td>
+          </tr>
+</table>  
+          
+           <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><img src="../Anh/tna-aVA.jpg" width="200" height="150"></td>
+            <td><h3>Bất ngờ lai lịch cô gái xinh đẹp xuất cảnh trái phép sang Lào<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">PHÁP LUẬT<a style="color:#666">ㅤ20 phút trước</a></p><br>
+             <p>Sau khi tiếp nhận cô gái 21 tuổi nhập cảnh trái phép sang Lào, cơ quan chức năng phát hiện đây là đối tượng đang bị truy nã.</p><br>
+             <p style="text-align: left"><a href="#" >Chi tiết</a></p>
+            </td>
+          </tr>
+          </table> 
+          
+           <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><img src="../Anh/1111.jpg" width="200" height="150"></td>
+            <td><h3>Uể oải, chán ăn, buồn nôn, khó thở, cùng nhiều bệnh tiết khác,... nam sinh choáng váng với chẩn đoán suy thận giai đoạn cuối<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">SỨC KHỎE<a style="color:#666">ㅤ3 giờ trước</a></p><br>
+             <p>Sau khi phát hiện suy thận giai đoạn cuối, Dũng xin bảo lưu kết quả học tập để đến bệnh viện lọc máu theo chu kỳ 3 lần/tuần.</p><br>
+             <p style="text-align: left"><a href="#" >Chi tiết</a></p>
+            </td>
+          </tr>
+          </table>  
+          
+             <table width="100%" border="0" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><img src="../Anh/lua-ava1.jpg" width="200" height="150"></td>
+            <td><h3>Lừa bán đất của người khác, chiếm đoạt 20 tỷ đồng<img src="Anh/Skins/new.gif" width="33" height="15"></h3><br>
+             <p style="color:#06F">PHÁP LUẬT<a style="color:#666">ㅤ6 ngày trước</a></p><br>
+             <p>Làm ăn thua lỗ, Bình nghĩ cách lừa bán đất không phải của mình cho người khác để chiếm đoạt 20 tỷ đồng.</p><br>
+             <p style="text-align: left"><a href="#" >Chi tiết</a></p>
+            </td>
+          </tr>
+          </table>  
+  
+ <img src="Capturet.PNG" width="1000" height="477">
+          
+          
+          
+<div id="footer"><!--phần cuối trang wed-->
+          
+        
+      <table width="100%" border="0" cellspacing="5" cellpadding="5">
+              <tr>
+                <td>TRANG THÔNG TIN ĐIỆN TỬ TỔNG HỢP CỦA CÔNG<br>
+                 TY CỔ PHẦN TRUYỀN THÔNG VIETNAMNET</td>
+                <td>CÔNG TY CỔ PHẦN TRUYỀN THÔNG VIETNAMNET</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>ĐỊA CHỈ: Tòa nhà C'land, số 156 ngõ Xã Đàn 2, Đống Đa, Hà Nội</td>
+                <td>HÀ NỘI</td>
+                <td>TP.HCM</td>
+              </tr>
+              <tr>
+                <td>ĐIỆN THOẠI: 0437.722.729 - FAX: 0437722729</td>
+                <td>SDT: 0437727988</td>
+                <td>SDT: 02838181436</td>
+              </tr>
+              
+              <tr>
+                <td>Email: tintuconline@vietnamnet.vn</td>
+                <td>SDT: 0919405885</td>
+                <td>SDT: 0919405885</td>
+              </tr>
+              
+               <tr>
+                <td>&nbsp;</td>
+                <td>Email: vietnamnetjsc.hn@vietnamnet.vn</td>
+                <td>Email: vietnamnetjsc.hcm@vietnamnet.vn</td>             
+        </tr>
+              
+    </table>
+
+</div>
+</div>
+ 
+</body>
+
+</html>
